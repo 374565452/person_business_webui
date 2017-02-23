@@ -2,7 +2,6 @@ $(document).ready(function () {
     //themes, change CSS with JS
     //default theme(CSS) is cerulean, change it if needed
     var defaultTheme = 'cerulean';
-
     var currentTheme = $.cookie('currentTheme') == null ? defaultTheme : $.cookie('currentTheme');
     var msie = navigator.userAgent.match(/msie/i);
     $.browser = {};
@@ -112,21 +111,35 @@ $(document).ready(function () {
     });
 
     $('.accordion > a').click(function (e) {
+        leftMenuCtl();
         e.preventDefault();
         var $ul = $(this).siblings('ul');
         var $li = $(this).parent();
-        if ($ul.is(':visible')) $li.removeClass('active');
-        else                    $li.addClass('active');
+        if ($ul.is(':visible')){ 
+            $li.removeClass('active');
+        }else{
+            $li.addClass('active');
+        }
+        //$ul.slideDown();
         $ul.slideToggle();
     });
 
-    $('.accordion li.active:first').parents('ul').slideDown();
+    $('li.active:first > a').click();
+    //$('.accordion li.active:first').parents('ul').slideDown();
 
 
     //other things to do on document ready, separated for ajax calls
     docReady();
 });
 
+
+function leftMenuCtl(){
+    $('.accordion > a').each(function(){
+        //alert("aaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+        $(this).siblings('ul').slideUp();
+        $(this).parent().removeClass('active');
+    });
+}
 
 function docReady() {
     //prevent # links from moving to top
@@ -142,7 +155,7 @@ function docReady() {
     });
 
     //chosen - improves select
-    $('[data-rel="chosen"],[rel="chosen"]').chosen();
+    //$('[data-rel="chosen"],[rel="chosen"]').chosen();
 
     //tabs
     $('#myTab a:first').tab('show');
