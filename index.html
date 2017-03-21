@@ -20,6 +20,9 @@
       font-size: 14px;
      font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
     }  
+    *{
+       min-height: 860px;
+    }
   </style>
 <body>
   <!-- start top -->
@@ -284,7 +287,9 @@
                                 class="glyphicon glyphicon-remove"></i></a>
                     </div>
                 </div>
-                <div class="box-content">
+                <div class="box-content" id="allmap">
+                    <!---->
+                    <!--老数据备份
                     <table class="table table-bordered table-striped table-condensed">
                         <thead>
                         <tr>
@@ -347,6 +352,7 @@
                         <li><a href="#">4</a></li>
                         <li><a href="#">Next</a></li>
                     </ul>
+                    -->
                 </div>
             </div>
         </div>
@@ -415,6 +421,9 @@
 <!-- application script for Charisma demo -->
 <script src="js/charisma.js"></script>
 
-   
+<script type="text/javascript" src="http://maps.google.cn/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ndUzBpyp7u4Dr6gBVZLhEIGs"></script>  
+<script type="text/javascript" src="js/g.map.js"></script>
+<script type="text/javascript" src="js/GPSConvert.js"></script>
 </body>
 </html>
