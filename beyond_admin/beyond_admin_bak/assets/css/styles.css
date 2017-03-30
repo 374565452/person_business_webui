@@ -25,7 +25,7 @@ div.navbar-menu ul li.navbar-menu-active{
 	background: #87CEEB;
 }
 div.navbar-menu ul li a {
-	color:#2dc3e8;
+	color:#fff;
 /* 设置文字颜色 */
 	text-decoration:none; /* 去掉下划线 */
 }
@@ -34,7 +34,7 @@ div.navbar-menu ul li a:visited
 {
    
     border: 1px #4e667d solid; /* 边框 */
-    color: #dde4ec; /* 文字颜色 */
+    color: #000; /* 文字颜色 */
     display: block; /* 此元素将显示为块级元素，此元素前后会带有换行符 */
   
 

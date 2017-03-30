@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>Dashboard</title>
+
+    <meta name="description" content="Dashboard" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+
+    <!--Basic Styles-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/demo.min.css" rel="stylesheet" />
+    <link href="assets/css/typicons.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+
+    <!--Skin Script: Place this script in head to load scripts for skins and rtl support-->
+    <script src="assets/js/skins.min.js"></script>
+</head>
+
+<body>
+	    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-container">
+                <!-- Navbar Barnd -->
+                <div class="navbar-header pull-left">
+                    <a href="#" class="navbar-brand">
+                        <small>
+                            <img src="assets/img/logo.png" alt="" />
+                        </small>
+                    </a>
+                </div>
+                <!-- /Navbar Barnd -->
+
+                <!-- Sidebar Collapse -->
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="collapse-icon fa fa-bars"></i>
+                </div>
+                <!-- /Sidebar Collapse -->
+                <!--上方导航-->
+                <div class="navbar-header pull-left navbar-menu">
+                    <ul >
+                         <li class="navbar-menu-active">
+                           <a href="#">设置1</a>
+                        </li>
+                        <li>
+                           <a href="#">设置2</a>
+                        </li>
+                        <li>
+                           <a href="#">设置13</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/上方导航-->
+                <!-- /Sidebar Collapse -->
+
+                <!-- Account Area and Settings -->
+                
+                <div class="navbar-header pull-right">
+                    <div class="navbar-account">
+                        <ul class="account-area">
+                            <li>
+                                <a class="login-area dropdown-toggle" data-toggle="dropdown">
+                                    <div class="avatar" title="View your public profile">
+                                        <img src="assets/img/avatars/adam-jansen.jpg">
+                                    </div>
+                                    <section>
+                                        <h2><span class="profile"><span>admin</span></span></h2>
+                                    </section>
+                                </a>
+                                <!--Login Area Dropdown-->
+                                <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
+                                   
+                                    
+                                    <li class="edit">
+                                     	<a href="profile.html" class="pull-left">个人信息</a>
+                                     	<a href="#" class="pull-right">设置</a>
+                                     </li>
+
+                                    <li class="edit">
+                                     	<a href="profile.html" class="pull-left">个人信息</a>
+                                     	<a href="#" class="pull-right">设置</a>
+                                     </li>
+                                    <!--Avatar Area-->
+                                   
+                                    <!--/Theme Selector Area-->
+                                    <li class="dropdown-footer">
+                                        <a href="login.html">
+                                            退出
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!--/Login Area Dropdown-->
+                            </li>
+                            <!-- /Account Area -->
+                            <!--Note: notice that setting div must start right after account area list.
+                            no space must be between these elements-->
+                            <!-- Settings -->
+                        </ul>
+
+                        <!-- Settings -->
+                    </div>
+                </div>
+                <!-- /Account Area and Settings -->
+            </div>
+        </div>
+    </div>
+    <!-- /Navbar -->
+     <!-- Main Container -->
+    <div class="main-container container-fluid">
+        <!-- Page Container -->
+        <div class="page-container">
+        	 <!-- Page Sidebar -->
+            <div class="page-sidebar" id="sidebar">
+                <!-- Page Sidebar Header
+                <div class="sidebar-header-wrapper">
+                    <input type="text" class="searchinput" />
+                    <i class="searchicon fa fa-search"></i>
+                    <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+                </div>-->
+                <!-- /Page Sidebar Header -->
+                <!-- Sidebar Menu -->
+                <ul class="nav sidebar-menu">
+                    <!--Dashboard-->
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="menu-icon glyphicon glyphicon-home"></i>
+                            <span class="menu-text"> 首页 </span>
+                        </a>
+                    </li>
+                   
+                    <!--UI Elements-->
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa  fa-key"></i>
+                            <span class="menu-text"> 权限设置 </span>
+                            <i class="menu-expand"></i>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="elements.html">
+                                    <span class="menu-text">角色管理</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="elements.html">
+                                    <span class="menu-text"> 模块管理 </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="district.html">
+                                    <span class="menu-text"> 区域管理 </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--Tables-->
+                    <li>
+                        <a href="#" class="menu-dropdown">
+                            <i class="menu-icon fa fa-book"></i>
+                            <span class="menu-text"> 基础信息 </span>
+
+                            <i class="menu-expand"></i>
+                        </a>
+
+                        <ul class="submenu">
+                            <li>
+                                <a href="tables-simple.html">
+                                    <span class="menu-text"> 参数配置 </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tables-data.html">
+                                    <span class="menu-text"> 用户管理 </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                   
+                   
+                    <!--Profile-->
+                    <li>
+                        <a href="profile.html">
+                            <i class="menu-icon fa fa-picture-o"></i>
+                            <span class="menu-text"> 其他设置 </span>
+                        </a>
+                    </li>
+                   
+                  
+                </ul>
+                <!-- /Sidebar Menu -->
+            </div>
+            <!-- /Page Sidebar -->
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Breadcrumb -->
+                <div class="page-breadcrumbs">
+                    <ul class="breadcrumb">
+                        <li>
+                            <i class="fa fa-home"></i>
+                            <a href="#">首页</a>
+                        </li>
+                        <!--
+                        <li>
+                            <a href="#">Elements</a>
+                        </li>
+                        <li class="active">Tabs & Accordions</li>-->
+                    </ul>
+                </div>
+                <!-- /Page Breadcrumb -->
+                
+                <!-- Page Body -->
+                <div class="page-body">
+
+                      <div class="row">
+                        <div class="col-lg-12 col-sm-12 col-xs-12">
+                            <h5 class="row-title before-pink"><i class="glyphicon glyphicon-resize-vertical pink"></i>其他信息</h5>
+                            <div class="row">
+                                <div class="col-lg-12 col-sm-12 col-xs-12">
+                                    <div class="tabbable tabs-below">
+                                        <div class="tab-content">
+                                            <div id="home2" class="tab-pane in active">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                            </div>
+
+                                            <div id="profile2" class="tab-pane">
+                                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
+                                            </div>
+
+                                            <div id="dropdown12" class="tab-pane">
+                                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.</p>
+                                            </div>
+                                        </div>
+
+                                        <ul class="nav nav-tabs" id="myTab2">
+                                            <li class="active">
+                                                <a data-toggle="tab" href="#home2">Home</a>
+                                            </li>
+
+                                            <li>
+                                                <a data-toggle="tab" href="#profile2">Profile</a>
+                                            </li>
+
+                                            <li>
+                                                <a data-toggle="tab" href="#dropdown12">More</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="horizontal-space"></div>
+
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 col-xs-12">
+                            <h5 class="row-title"><i class="typcn typcn-folder themeprimary"></i>操作日志</h5>
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6 col-xs-12">
+                                    <div class="tabbable">
+                                        <ul class="nav nav-tabs" id="myTab">
+                                            <li class="active">
+                                                <a data-toggle="tab" href="#home">
+                                                    操作日志1
+                                                </a>
+                                            </li>
+
+                                            <li class="tab-red">
+                                                <a data-toggle="tab" href="#profile">
+                                                    操作日志2
+                                                </a>
+                                            </li>
+
+                                            <li class="dropdown">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                                    操作日志3
+                                                    <b class="caret"></b>
+                                                </a>
+
+                                                <ul class="dropdown-menu dropdown-blue">
+                                                    <li>
+                                                        <a data-toggle="tab" href="#dropdown1">日志1</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a data-toggle="tab" href="#dropdown2">日志2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="home" class="tab-pane in active">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                                            </div>
+
+                                            <div id="profile" class="tab-pane">
+                                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
+                                            </div>
+
+                                            <div id="dropdown1" class="tab-pane">
+                                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.</p>
+                                            </div>
+
+                                            <div id="dropdown2" class="tab-pane">
+                                                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="horizontal-space"></div>
+
+                                </div>
+                                 <div class="col-lg-6 col-sm-6 col-xs-12">
+                                    <div class="panel-group accordion" id="accordions">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordions" href="#collapseOnes">
+                                                        <i class="fa-fw fa fa-check"></i> Collapsible Group Item #1
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseOnes" class="panel-collapse collapse in">
+                                                <div class="panel-body border-red">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordions" href="#collapseTwos">
+                                                        Collapsible Group Item #2
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseTwos" class="panel-collapse collapse">
+                                                <div class="panel-body border-red">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordions" href="#collapseThrees">
+                                                        Collapsible Group Item #3
+                                                    </a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapseThrees" class="panel-collapse collapse">
+                                                <div class="panel-body border-gold">
+                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+                <!-- /Page Body -->
+            </div>
+            <!-- /Page Content -->
+        </div>
+        <!-- /Page Container -->
+        <!-- Main Container -->
+    </div>
+
+
+    <!--Basic Scripts-->
+    <script src="assets/js/jquery-2.0.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--Beyond Scripts-->
+    <script src="assets/js/beyond.min.js"></script>
+
+
+    <!--Page Related Scripts-->
+    <!--Sparkline Charts Needed Scripts-->
+    <script src="assets/js/charts/sparkline/jquery.sparkline.js"></script>
+    <script src="assets/js/charts/sparkline/sparkline-init.js"></script>
+
+    <!--Easy Pie Charts Needed Scripts-->
+    <script src="assets/js/charts/easypiechart/jquery.easypiechart.js"></script>
+    <script src="assets/js/charts/easypiechart/easypiechart-init.js"></script>
+
+    <!--Flot Charts Needed Scripts-->
+    <script src="assets/js/charts/flot/jquery.flot.js"></script>
+    <script src="assets/js/charts/flot/jquery.flot.resize.js"></script>
+    <script src="assets/js/charts/flot/jquery.flot.pie.js"></script>
+    <script src="assets/js/charts/flot/jquery.flot.tooltip.js"></script>
+    <script src="assets/js/charts/flot/jquery.flot.orderBars.js"></script>
+
+    <script  type="text/javascript" >
+
+	    
+    </script>
+
+</body>
+
+</html>
