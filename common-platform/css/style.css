@@ -321,3 +321,24 @@ div.navbar-menu ul li a:active
     overflow:hidden;
     margin:6px 0
 }
+div.panel-body ol li.master_action{
+    font-size: 18px;
+    font-weight:bold;
+    clear:both;
+}
+div.panel-body ol {
+    clear :both;
+}
+div.panel-body div.horizontal-space{
+    clear:both;
+}
+div.panel-body div.form-group{
+    clear:both;
+}
+div.panel-body ol li.master_action ul li{
+    font-size: 16px;
+    padding:10px;
+    font-weight: normal;
+    display: block;
+    float:left;
+}
