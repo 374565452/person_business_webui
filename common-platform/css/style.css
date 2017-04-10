@@ -342,3 +342,13 @@ div.panel-body ol li.master_action ul li{
     display: block;
     float:left;
 }
+
+
+td.offline{
+    color:#ea644a;
+}
+
+td.online{
+
+    color:#3280fc;
+}
